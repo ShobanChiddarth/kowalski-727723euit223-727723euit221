@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <style>
+        body{
+            background-color: darkblue;
+        }
+
+        #tetris {
+            position: absolute;
+            margin: 0;
+            width: 350px;
+            height: 300px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #tetris>tr>td {
+            height: 50px;
+            width: 50px;
+            margin: 40px;
+            padding: 40px;
+            border: 40px transparent;
+            position: absolute;
+        }
+
+        .inv {
+            background: transparent;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .yellow {
+            background: yellow;
+        }
+
+        .violet {
+            background: violet;
+        }
+
+        .cyan {
+            background: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div id="board">
+        <table id="tetris">
+            <tr> <!-- r1 -->
+                <td class="inv"></td>
+                <td class="inv"></td>
+                <td class="inv"></td>
+                <td class="inv"></td>
+                <td class="inv"></td>
+                <td class="red"></td>
+                <td class="inv"></td>
+                <td class="inv"></td>
+            </tr>
+            <tr> <!-- r2 -->
+                <td class="inv"></td>
+                <td class="inv"></td>
+                <td class="inv"></td>
+                <td class="inv"></td>
+                <td class="red"></td>
+                <td class="red"></td>
+                <td class="inv"></td>
+                <td class="inv"></td>
+            </tr>
+            <tr> <!-- r3 -->
+                <td class="inv"></td>
+                <td class="yellow"></td>
+                <td class="yellow"></td>
+                <td class="inv"></td>
+                <td class="red"></td>
+                <td class="inv"></td>
+                <td class="inv"></td>
+                <td class="inv"></td>
+            </tr>
+            <tr> <!-- r4 -->
+                <td class="inv"></td>
+                <td class="yellow"></td>
+                <td class="yellow"></td>
+                <td class="red"></td>
+                <td class="inv"></td>
+                <td class="violet"></td>
+                <td class="inv"></td>
+                <td class="inv"></td>
+            </tr>
+            <tr> <!-- r5 -->
+                <td class="inv"></td>
+                <td class="red"></td>
+                <td class="red"></td>
+                <td class="red"></td>
+                <td class="cyan"></td>
+                <td class="violet"></td>
+                <td class="violet"></td>
+                <td class="inv"></td>
+            </tr>
+            <tr> <!-- r6 -->
+                <td class="inv"></td>
+                <td class="yellow"></td>
+                <td class="cyan"></td>
+                <td class="cyan"></td>
+                <td class="cyan"></td>
+                <td class="violet"></td>
+                <td class="cyan"></td>
+                <td class="inv"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
